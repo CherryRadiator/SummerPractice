@@ -3,16 +3,16 @@ CXX = g++
 CXXFLAGS = -std=c++17 -Wall -Wextra -O2
 
 # Target executable name
-TARGET = testBitonicSort
+TARGET = complexTest
 
 # Source files
-SOURCES = src/bitonicSort.cpp src/unitTest.cpp
+SOURCES = src/bitonicSort.cpp src/fileIO.cpp src/lsdSort.cpp src/menu.cpp src/main.cpp
 
 # Object files (automatically generated from sources)
 OBJECTS = $(SOURCES:.cpp=.o)
 
 # Header files (for dependency tracking)
-HEADERS = include/bitonicSort.h
+HEADERS = include/bitonicSort.h include/fileIO.h include/lsdSort.h include/menu.h include/main.h
 
 # Default target
 all: $(TARGET)
